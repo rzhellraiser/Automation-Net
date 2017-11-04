@@ -1,0 +1,12 @@
+F:\Visual-Net\BasicProject\BasicProject\bin\Debug\chromedriver.exe
+F:\Visual-Net\BasicProject\BasicProject\bin\Debug\BasicProject.exe.config
+F:\Visual-Net\BasicProject\BasicProject\bin\Debug\BasicProject.exe
+F:\Visual-Net\BasicProject\BasicProject\bin\Debug\BasicProject.pdb
+F:\Visual-Net\BasicProject\BasicProject\bin\Debug\nunit.framework.dll
+F:\Visual-Net\BasicProject\BasicProject\bin\Debug\WebDriver.dll
+F:\Visual-Net\BasicProject\BasicProject\bin\Debug\WebDriver.Support.dll
+F:\Visual-Net\BasicProject\BasicProject\bin\Debug\nunit.framework.xml
+F:\Visual-Net\BasicProject\BasicProject\bin\Debug\WebDriver.xml
+F:\Visual-Net\BasicProject\BasicProject\bin\Debug\WebDriver.Support.xml
+F:\Visual-Net\BasicProject\BasicProject\obj\Debug\BasicProject.exe
+F:\Visual-Net\BasicProject\BasicProject\obj\Debug\BasicProject.pdb
