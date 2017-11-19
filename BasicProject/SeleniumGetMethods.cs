@@ -21,7 +21,7 @@ namespace BasicProject
 
         public static string GetTextFromDDL(string element, PropertyType elementtype)
         {
-            if (elementtype == PropertyType.Id)
+            if (elementtype == PropertyType.Id) 
                 return new SelectElement(PropertiesCollection.driver.FindElement(By.Id(element))).AllSelectedOptions.SingleOrDefault().Text;
             if (elementtype == PropertyType.Name)
                 return new SelectElement(PropertiesCollection.driver.FindElement(By.Name(element))).AllSelectedOptions.SingleOrDefault().Text;

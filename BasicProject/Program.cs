@@ -30,17 +30,29 @@ namespace BasicProject
         [Test]
         public void ExecuteTest()
         {
-            //Title
-            SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
+            //Login to application
+            LoginPageObject pageLogin = new LoginPageObject();
+            EAPageObject pageEA = pageLogin.Login("rz", "automation");
 
-            //Initial
-            SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Id);
+            pageEA.FillUserForm("Rz", "Renzo", "Castaneda");
 
-            Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetText("TitleId", PropertyType.Id));
-            Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name)); 
+            //pageEA.txtInitial.SendKeys("executeautomation");
+            //pageEA.btnSave.Click();
+            //EAPageObject page = new EAPageObject();    
 
-            //Click
-            SeleniumSetMethods.Click("Save", PropertyType.Name);   
+            ////Title
+            //SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
+
+            ////Initial
+            //SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Id);
+
+            //Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetText("TitleId", PropertyType.Id));
+            //Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText("Initial", PropertyType.Name)); 
+
+            ////Click
+            //SeleniumSetMethods.Click("Save", PropertyType.Name);   
+
+
         }        
 
         [TearDown]
