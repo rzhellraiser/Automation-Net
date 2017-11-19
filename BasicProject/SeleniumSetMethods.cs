@@ -8,10 +8,10 @@ using OpenQA.Selenium.Support.UI;
 
 namespace BasicProject
 {
-    class SeleniumSetMethods
+    public static class SeleniumSetMethods
     {
-        //Enter Text
-        public static void EnterText(IWebElement element, string value)
+        //Extended method for entering text in the control
+        public static void EnterText(this IWebElement element, string value)
         {
             element.SendKeys(value);
             //if(elementtype == PropertyType.Id)
@@ -21,7 +21,7 @@ namespace BasicProject
         }
 
         //Click into a button, Checkbox, option etc
-        public static void Click(IWebElement element)
+        public static void Clicks(this IWebElement element)
         {
             element.Click();
             //if (elementtype == PropertyType.Id)
@@ -31,7 +31,7 @@ namespace BasicProject
         }
 
         //Selecting a drop down control
-        public static void SelectDropDown(IWebElement element, string value)
+        public static void SelectDropDown(this IWebElement element, string value)
         {
             new SelectElement(element).SelectByText(value);
             //if (elementtype == PropertyType.Id)
