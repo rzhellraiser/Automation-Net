@@ -23,7 +23,7 @@ namespace BasicProject
         {
             PropertiesCollection.driver = new ChromeDriver();
             //Navigate to page
-            PropertiesCollection.driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?Username=&Password=&Login=Login");
+            PropertiesCollection.driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
             Console.WriteLine("Opened URL");
         }
 
