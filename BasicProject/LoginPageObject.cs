@@ -28,9 +28,9 @@ namespace BasicProject
         public EAPageObject Login(string uname, string password)
         {
             //Username
-            txtUserName.SendKeys(uname);
+            txtUserName.EnterText(uname);
             //Password
-            txtPassword.SendKeys(password);
+            txtPassword.EnterText(password);
             //Click button
             btnLogin.Submit();
 
